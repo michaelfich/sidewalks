@@ -1,7 +1,9 @@
-require 'rack'
-
 module Sidewalks
   class Application
+    def initialize(app = {})
+      @app = app
+    end
+
     def call(env)
       status = 200
       headers = { 'Content-Type' => 'text/html' }
@@ -11,5 +13,3 @@ module Sidewalks
     end
   end
 end
-
-Rack::Handler::WEBrick.run ::Sidewalks::Application.new

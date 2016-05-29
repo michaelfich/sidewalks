@@ -5,6 +5,7 @@ An application to demonstrate the structure and functionality of a Rack web appl
 ## Resources
 
 * [Official Rack Documentation](http://rack.github.io/)
+* [rack-contrib](https://github.com/rack/rack-contrib)
 * [Getting Started with Rack](https://www.youtube.com/watch?v=cSjRbpl8lzQ&list=WL&index=10)
 * [Railscasts - Rack App from Scratch](https://www.youtube.com/watch?v=MHYMObuEahc&index=17&list=WL)
 * [Railscasts - Rails Middleware Walkthrough](https://www.youtube.com/watch?v=7u5TvA_l1wo&index=11&list=WL)

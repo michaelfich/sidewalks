@@ -1,3 +1,8 @@
+require 'rubygems'
+require 'bundler/setup'
+
+Bundler.require(:default)
+
 module Sidewalks
   class Application
     def initialize(app = {})

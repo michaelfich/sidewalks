@@ -10,12 +10,12 @@ module Sidewalks
     end
 
     def call(env)
-      status = 200
+      status  = 200
       headers = { 'Content-Type' => 'text/html' }
-      body = '<h1>Welcome to Ruby on Sidewalks</h1>' \
-             '<p>A rack demo at Ruby Lightning Talks TO - June 2016</p>'
+      body    = '<h1>Welcome to Ruby on Sidewalks</h1>' \
+                '<p>A rack demo at Ruby Lightning Talks TO - June 2016</p>'
 
-      [ status, headers, [body] ]
+      [ status, headers, [ env.inspect ] ]
     end
   end
 end

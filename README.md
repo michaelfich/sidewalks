@@ -2,7 +2,7 @@
 
 An application to demonstrate the structure and functionality of a Rack web application
 
-## Rack Resources
+## Resources
 
 * [Official Rack Documentation](http://rack.github.io/)
 * [Getting Started with Rack](https://www.youtube.com/watch?v=cSjRbpl8lzQ&list=WL&index=10)

@@ -1,5 +1,6 @@
 require 'rubygems'
 require 'bundler/setup'
+require 'erb'
 
 Bundler.require(:default)
 
@@ -10,12 +11,13 @@ module Sidewalks
     end
 
     def call(env)
-      status  = 200
-      headers = { 'Content-Type' => 'text/html' }
-      body    = '<h1>Welcome to Ruby on Sidewalks</h1>' \
-                '<p>A rack demo at Ruby Lightning Talks TO - June 2016</p>'
+      [ 200, { 'Content-Type' => 'text/html' }, [ render('index.html.erb') ] ]
+    end
 
-      [ status, headers, [ env.inspect ] ]
+    def render(filename)
+      file_path = File.expand_path("./app/views/#{filename}")
+      file_content = File.read(file_path)
+      ERB.new(file_content).result(binding)
     end
   end
 end

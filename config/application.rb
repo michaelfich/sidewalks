@@ -6,11 +6,14 @@ Bundler.require(:default)
 
 module Sidewalks
   class Application
+    attr_accessor :app
+
     def initialize(app = {})
       @app = app
     end
 
     def call(env)
+      request = Rack::Request.new(env)
       [ 200, { 'Content-Type' => 'text/html' }, [ render('index.html.erb') ] ]
     end
 

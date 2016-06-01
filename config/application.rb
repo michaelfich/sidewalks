@@ -14,7 +14,13 @@ module Sidewalks
 
     def call(env)
       request = Rack::Request.new(env)
-      [ 200, { 'Content-Type' => 'text/html' }, [ render('index.html.erb') ] ]
+
+      case request.path.downcase
+      when '/'
+        [ 200, { 'Content-Type' => 'text/html' }, [ render('index.html.erb') ] ]
+      else
+        [ 404, { 'Content-Type' => 'text/html' }, [ render('404.html.erb') ] ]
+      end
     end
 
     def render(filename)

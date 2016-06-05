@@ -27,6 +27,15 @@ h1 {
   margin: 0;
 }
 
+h2 {
+  border-bottom: 1px solid white;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  margin: 50px 0 20px;
+  padding: 10px 0;
+  font-weight: 100;
+}
+
 a {
   color: #f1c40f;
   text-decoration: none;
@@ -39,7 +48,7 @@ a:hover {
 ul {
   list-style: none;
   padding: 0;
-  margin: 50px 0;
+  margin: 10px 0;
 }
 
 li {

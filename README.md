@@ -2,6 +2,10 @@
 
 An application to demonstrate the structure and functionality of a Rack web application
 
+## Screencast
+
+[![Rack Applications and Middleware](https://img.youtube.com/vi/NJ-ilQMsqMs/0.jpg)](https://www.youtube.com/watch?v=NJ-ilQMsqMs)
+
 ## Resources
 
 * [Official Rack Documentation](http://rack.github.io/)
